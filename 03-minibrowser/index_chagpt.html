@@ -1,0 +1,56 @@
+<!-- 
+O seu código parece interessante! Abaixo, fiz algumas correções e melhorias:
+
+Corrigi o erro de digitação no atributo href (estava como hreaf).
+Recomendo usar += ao invés de recuperar o valor atual do innerHTML a cada iteração.
+Para evitar possíveis problemas com segurança, ao adicionar conteúdo HTML dinamicamente, é importante fazer a sanitização do conteúdo.
+O loop for(aba of abas) deve ser corrigido para for (let aba of abas) ou for (const aba of abas), pois o uso de let ou const é mais apropriado para blocos de escopo local. 
+-->
+<!--
+Mudanças:
+Correção de href: Corrigi o erro de digitação no atributo hreaf, que agora é href.
+Uso de += no innerHTML: O uso de document.body.innerHTML += ... é mais simples e eficiente que recuperar o conteúdo atual a cada vez.
+Adição do atributo target="_blank": Para abrir os links em uma nova aba do navegador.
+Uso de const: Troquei for(aba of abas) para for(const aba of abas), garantindo boas práticas.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Browser Experimental</title>
+</head>
+<body>
+<script>
+   // Objetos: Representa coisas com múltiplos atributos para representá-las
+   var aba1 = {
+       titulo: 'Título da Aba 1',
+       url: 'https://docs.google.com/spreadsheets/d/1NjuBxNehQNffzHnRdMJoRzl0-A2dQnYqjOTSmeSz4m0/edit?gid=0#gid=0',
+   };
+   var aba2 = {
+       titulo: 'Título da Aba 2',
+       url: 'https://dgez.com.br/',
+   };
+
+   // Arrays: Listas de coisas
+   const abas = [
+     aba1,
+     aba2
+   ];
+
+   // Loop de processamento
+   for (const aba of abas) {
+       console.log(aba.titulo);
+       // Adiciona links das abas ao corpo do documento
+       document.body.innerHTML += `<a href="${aba.url}" target="_blank">${aba.titulo}</a><br/>`;
+   }
+   
+// O que tem em uma aba do navegador?
+// [ ] título
+// [X] url
+// [ ] página de fato (html, css, javascript)
+</script>
+<link rel="stylesheet" href="./style.css" />
+</body>
+</html>
