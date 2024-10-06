@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Acesso a Plataforma BI (Business Intelligence)</title>
+    <meta name="description" content="Aprenda a formatar máscaras de forma muito simples e rápida usando a biblioteca jQuery Mask">
+    <meta name="author" content="Prof. Anderson Luiz de Oliveira - https://www.blogson.com.br/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+	<link rel="stylesheet" type="text/css" href="/glpi/public/lib/photoswipe.css?v=9.4.4" media="all">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</head>
+<body>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+		<form class="form-horizontal">
+			<p style="text-align: center;"><span style="background-color: #ffffff;"><img style="width: 96.46px; height: 61.98px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="" src="https://lh4.googleusercontent.com/a3m-WExCzBphLLSphBnN8Io9l669EJ85Tx-vfC2xerDSSShf9uzzrcy4n76zyVPJmkVRTwn2UqE2noZVTGHm5_2ULWR-FHOPF0UnpIGCo8zh14CaW8kFTHkoFaHGq9mQSE89LwGH" alt=""></span><br><span style="font-size: 11pt; background-color: #ffffff;"><strong>PREFEITURA DE PORTO VELHO</strong></span><br><span style="font-size: 10pt; background-color: #ffffff;">SUPERINTEND&Ecirc;NCIA MUNICIPAL DE TECNOLOGIA DA INFORMA&Ccedil;&Atilde;O E PESQUISA (SMTI)<br></span><span style="font-size: 10pt;">DEPARTAMENTO DE GOVERNAN&Ccedil;A DE TI (DQG)</span></p>
+        	<fieldset>
+				<legend><strong>Termo de Confidencialidade e Sigilo - Plataforma  Buniness Intelligence (BI)</strong></legend>
+                <!--<p align=justify>-->
+				<p align=justify><strong>Por este termo de confidencialidade e sigilo comprometo-me:</strong></p>
+                <p align=justify><strong>1.</strong>DAS INFORMAÇÕES CONFIDENCIAIS. Toda informação disponibilizada ao(a) servidor(a), em razão do desempenho de suas funções e atividades, doravante denominada simplesmente informação(ões) Confidencial(is), incluindo, dentre outras, todas e quaisquer informações orais e/ou escritas, transmitidas e/ou divulgadas pela Municipalidade, será considerada confidencial, restrita e de propriedade desta.
+				<p align=justify><strong>1.1.</strong>Informação(ões) Confidencial(is) significa, sem se limitar, toda e qualquer informação, de natureza técnica, operacional, comercial, jurídica, planos de negócios, métodos de contabilidade, técnicas e experiências acumuladas, documentos, contratos, papéis, estudos, pareceres, pesquisa, transmitidas pela Municipalidade ao(a) servidor(a) ou adquiridas no exercício de suas funções, toda informação revelada, sob a forma escrita, verbal ou por quaisquer outros meios.
+				<p align=justify><strong>1.2.</strong> Informação Confidencial inclui, mas não se limita, à informação relativa às operações, processos, planos ou intenções, informações sobre instalações, equipamentos, segredos de negócio, dados pessoais sensíveis1, habilidades especializadas, projetos, métodos e metodologia, fluxogramas, especializações, componentes, diagramas, oportunidades de mercado e questões relativas a negócios revelados.
+				<p align=justify><strong>1.3.</strong> A CONFIDENCIALIDADE (a informação só deve ser acessível a quem tem a devida autorização).
+				<p align=justify><strong>2.</strong>DO USO. O(a) servidor(a) concorda em usar as informações Confidenciais recebidas da Municipalidade com o propósito restrito de se fazer cumprir o estabelecido no Estatuto dos Servidores Públicos do Município de Porto Velho (Lei nº 385/20102, art.140 – V , a) .
+				<p align=justify><strong>2.1.</strong>O(a) servidor(a) se compromete a não se ausentar da estação de trabalho sem encerrar a sessão de uso dos sistemas, garantindo assim a impossibilidade de acesso indevido de terceiros.
+				<p align=justify><strong>2.2.</strong>O(a) servidor(a) se compromete a utilizar os dados de acesso restrito mantendo a necessária cautela quando da exibição de dados em tela, impressora ou gravação em meios eletrônicos, a fim de evitar que deles venham tomar ciência, pessoas não autorizadas.
+				<p align=justify><strong>2.3.</strong>O(a) servidor(a) se compromete a não revelar sua senha de acesso ao(s) sistema(s) a outros, cuidando para que a mesma seja somente de seu conhecimento. Alterando a senha de acesso quando da possibilidade de violação ou conhecimento de terceiros e, não utilizar combinações óbvias ou de fácil acesso à mesma.
+				<p align=justify><strong>3.</strong>DA NÃO DIVULGAÇÃO. O(a) servidor(a) que receber informação Confidencial somente poderá usá-la para o propósito estabelecido no item 2 acima, e zelará para que tais informações Confidenciais não sejam de qualquer forma divulgadas ou reveladas a terceiros, utilizando-se, no mínimo, do mesmo zelo e cuidado que dispensa às suas próprias informações Confidenciais. Ficando expressamente proibído a utilização das informações a que tiver acesso, para gerar benefício próprio exclusivo e/ou unilateral, presente ou futuro, ou para o uso de terceiros; 
+				<p align=justify><strong>4.</strong>DAS CÓPIAS. O(a) servidor(a) que receber informação Confidencial fica desde já proibido(a) de produzir cópias, ou backup, por qualquer meio ou forma, de qualquer dos documentos a ele(a) fornecidos ou adquiridos no exercício de suas funções, além daquelas imprescindíveis ao desenvolvimento de seu trabalho, considerando que todas sejam informações confidenciais.
+				<p align=justify><strong>5.</strong>DA PROPRIEDADE. Toda informação Confidencial permanecerá sendo de propriedade da municipalidade, somente podendo ser usada pelo servidor para o exercício de suas funções. 
+				<p align=justify><strong>5.1.</strong>O(a) servidor(a) tem ciência e concorda que, após a cessação de vínculo com a Prefeitura de Porto Velho, deverá entregar ao seu superior imediato todo e qualquer recurso, seja de hardware, software ou material impresso, de propriedade da Instituição ou contendo dados e informações de propriedade da Instituição.
+				<p align=justify><strong>6.</strong>DA RESPONSABILIDADE. O(a) servidor(a) que receber informação Confidencial se obriga a:
+				<p align=justify><strong>6.1.</strong>Não discutir perante terceiros, usar, divulgar, revelar, ceder a qualquer título ou dispor das Informações Confidenciais, para nenhuma pessoa, física ou jurídica, e para nenhuma outra finalidade que não seja exclusivamente relacionada ao objeto referido, cumprindo-lhe adotar cautelas e precauções adequadas no sentido de impedir o seu uso indevido por qualquer pessoa que, por qualquer razão, tenha tido acesso a elas.
+				<p align=justify><strong>6.2</strong>Responsabilizar-se por impedir, por qualquer meio em direito admitido, a divulgação ou utilização das Informações Confidenciais.
+				<p align=justify><strong>6.3</strong>Restituir imediatamente o documento (ou outro suporte) que contiver as Informações Confidenciais à Parte reveladora, sempre que esta as solicitar ou sempre que as Informações Confidenciais deixarem de ser necessárias, e não guardar para si, em nenhuma hipótese, cópia, reprodução ou segunda via das mesmas.
+				<p align=justify><strong>6.4</strong>Responsabilizar-se por todas as pessoas que vierem a ter acesso às informações, por seu intermédio, e obrigando-se, assim, a ressarcir a ocorrência de qualquer dano e / ou prejuízo oriundo de uma eventual quebra de sigilo das informações fornecidas.
+				<p align=justify><strong>7.</strong>DA VIOLAÇÃO. O(a) servidor(a) que recebe e tem conhecimento de informação Confidencial, reconhece e aceita que, na hipótese de violação de quaisquer das cláusulas deste Termo, estará sujeito(a) as sanções e penalidades legais, especialmente àquelas estabelecidas no Estatuto dos Servidores Públicos do Município de Porto Velho (Lei nº 385/20103, art.140 – III)., sem prejuízos das perdas e danos que der causa, estas estimadas pela municipalidade, inclusive as de ordem moral ou concorrencial, bem como as de responsabilidades civil e criminal respectivas.
+				<p align=justify><strong>8.</strong>DO PRAZO. Fica ciente o(a) servidor(a) que receber informação Confidencial que as obrigações de confidencialidade decorrentes do presente Termo, tanto quanto as responsabilidades e obrigações outras derivadas do presente Termo, vigorarão durante o tempo que estiver prestando trabalho e permanecerão em vigor após o seu eventual desligamento.
+				<p align=justify><strong>9.</strong>DA CIÊNCIA E DAS ORIENTAÇÕES. O(a) servidor(a) DECLARA, neste ato, para os devidos fins de Direito, e a quem interessar possa, que está ciente dos termos legais acerca de suas responsabilidades, bem como ter recebido toda a orientação jurídica necessária, através da Procuradoria Geral do Município de Porto Velho - RO.
+				<p align=justify><strong>10.</strong>DISPOSIÇÕES GERAIS. Este Termo será regido pelas leis brasileiras e obriga as Partes, seus representantes legais, sucessores e cessionários, declarando as partes não haver quaisquer outros entendimentos, acordos ou declarações, expressas ou implícitas, com relação a este Termo de Compromisso de Confidencialidade que não estejam aqui específicas.
+				<p align=justify><strong>10.1.</strong>A vigência da obrigação de confidencialidade e sigilo, assumida pela minha pessoa por meio deste termo, terá a validade enquanto a informação não for tornada de conhecimento público por qualquer outra pessoa, ou mediante autorização escrita, concedida à minha pessoa pelas partes interessadas neste termo.
+				<p align=justify><strong>10.2.</strong>Nos termos do §único do art.1º do Decreto nº 397/2019, o(a) servidor(a) que violar o dever previsto no art. 202, inciso XII da Lei nº 1165/2008 e não cumprir o presente termo de compromisso e confidencialidade, poderá ser responsabilizado pessoalmente, conforme preceitua o art. 28 da Lei de Introdução às Normas de Direito Brasileiro 4(LINDB – Decreto-Lei nº 4.657/42) e incorrerá na prática de crime contra a administração pública de violação de sigilo funcional, de acordo com o art. 325, caput, §1º e §2º do Código Penal.
+				<p align=justify>Pelo não cumprimento do presente Termo de Compromisso e Confidencialidade, fica o servidor(a) abaixo assinado ciente de todas as sanções judiciais que poderão advir.
+				<fieldset>
+				<legend><strong>Hipóteses de Tratamento da Lei Geral de Proteção de Dados</strong></legend>
+				<div style="background: #eee; padding: 15px; margin-bottom: 15px;">
+                <p align="justify"><strong>-FINALIDADE.:</strong> Acesso aos Sistema Plataforma BI</p>
+                <p align="justify"><strong>-FUNDAMENTAL LEGAL.:</strong><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709.htm#art7" target="_blank" rel="noopener">Art.7&ordm; - inciso II - cumprimento de obriga&ccedil;&atilde;o legal</a></p>
+                <p align="justify"><strong>-LEI MUNICIPAL:</strong></p>
+                <p align="justify"><a href="https://www.portovelho.ro.gov.br/uploads/arquivos/leis/2016/11/21716/1478788187portaria-no-018-politica-de-seguranca-informatica.pdf" target="_blank" rel="noopener">Portaria Municipal n&ordm;018/DIAT/ASTE/SEMAD de 17 de dezembro de 2007</a></p>
+                <p>ARTIGO 6&ordm;-Das obriga&ccedil;&otilde;es dos usu&aacute;rios autorizados:</p>
+                <p>ART.6&ordm; - III zelar pelo sigilo e seguran&ccedil;a de sua senha de acesso &agrave; rede e aplicativos, que &eacute; de uso individual e intransfer&iacute;vel, n&atilde;o podendo ser compartilhada com terceiros;</p>
+                <p>ART.6&ordm; - V manter sigilo, integridade, seguran&ccedil;a e disponibilidade de todos os dados que tiverem acesso</p>
+                <p>ARTIGO 7&deg; &ndash; Fica expressamente proibido aos usu&aacute;rios:</p>
+                <p>ART. 7&deg; - III compartilhar com terceiros sua conta de acesso &agrave; rede, senha e outros tipos de autoriza&ccedil;&atilde;o de uso individual e intransfer&iacute;vel;</p>
+                <p>ART. 7&deg; - VI obter acesso n&atilde;o-autorizado aos sistemas;</p>
+                <p><span style="text-decoration: underline;"><strong>Lei Complementar n&ordm; 385/2010 </strong></span>- "Disp&otilde;e sobre o Regime Jur&iacute;dico dos Servidores P&uacute;blicos Municipais de Porto Velho, das autarquias, das funda&ccedil;&otilde;es P&uacute;blicas municipais"</p>
+                <p>ART.140 &ndash; V , a) &ndash; O(a) servidor(a) concorda em usar as informa&ccedil;&otilde;es Confidenciais recebidas da Municipalidade com o prop&oacute;sito restrito de se fazer cumprir o estabelecido no Estatuto dos Servidores P&uacute;blicos do Munic&iacute;pio de Porto Velho .</p>
+                <p align="justify"><strong>-LEI FEDERAL:</strong></p>
+                <p align="justify"><a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9094.htm" target="_blank" rel="noopener">Decreto Federal n&ordm;9044 de 17 de julho de 2017 - Art.5&ordm; - &sect;5&ordm;</a> |<a href="https://www.in.gov.br/en/web/dou/-/lei-n-14.129-de-29-de-marco-de-2021-311282132" target="_blank" rel="noopener"> Lei Federal n&ordm;14.129 de mar&ccedil;o de 2021 - Art.10</a></p>
+                <p align="justify"><span style="text-decoration: underline;">Lei Geral de Prote&ccedil;&atilde;o de Dados Pessoais </span>- <strong>ART.11 &ndash; II - </strong> b) tratamento compartilhado de dados necess&aacute;rios &agrave; execu&ccedil;&atilde;o, pela administra&ccedil;&atilde;o p&uacute;blica, de pol&iacute;ticas p&uacute;blicas previstas em leis ou regulamentos;&nbsp;</p>
+                </div>       
+				<div style="background: #eee; padding: 15px; margin-bottom: 15px;">
+                <p style="text-align: left;" align="center"><strong>D&Uacute;VIDAS:</strong></p>
+                <p align="justify">Ger&ecirc;ncia de Administra&ccedil;&atilde;o de Dados BI(DIAD)/DQG/SMTI/SGG- TEL.: (69) 3901-3130 OU COMUNICADOR SPARK : SMTI - DQG <br><strong>Para solicita&ccedil;&atilde;o de Consulta a Plataforma BI da SA&Uacute;DE</strong>(Business Intelligence), &eacute; necess&aacute;rio que seja encaminhado junto ao formul&aacute;rio devidamente preenchido e assinado o of&iacute;cio de autoriza&ccedil;&atilde;o.</p>
+                <p align="justify"><br><strong>Para solicita&ccedil;&atilde;o de Consulta a Plataforma BI da SA&Uacute;DE</strong>(Business Intelligence), &eacute; necess&aacute;rio que seja encaminhado junto ao formul&aacute;rio devidamente preenchido e assinado o of&iacute;cio de autoriza&ccedil;&atilde;o.</p>
+                </div>
+				</fieldset>
+			<fieldset>
+				<legend><strong><u>Assinaturas dos Responsáveis</strong></u></legend>	
+				<div class="text-center">
+				<div style="background:#eee; padding: 5px; margin-bottom: 5px;">
+				<div id="geral">
+                    <!--<div id="cabecalho"></div>-->
+                    <div id="principal">
+                       <!--<div id="conteudo-1">
+					   <h6 class="text-center">_____________________________________</h6>
+					   <p><h6 class="text-center">Assinatura e Carimbo do Servidor/Colaborador</h6></p>
+					   </div>-->
+					   
+                       <div id="conteudo-2">
+					    <br>
+						<h7 class="text-center">_____________________________________</h7>
+					    <p><h7 class="text-center">Assinatura/Carimbo do(a) Servidor(a)</h7></p>
+					     
+                          <div id="conteudo-2-1">
+						  <br>
+						  <h7 class="text-left">_____________________________________</h7>
+					      <h7 class="text-left">Assinatura/Carimbo do(a) Diretor(a) </h7>
+						  </div>
+                          <div id="conteudo-2-2">
+						  <br>
+						  <h7 class="text-right">_____________________________________</h7>
+					      <h7 class="text-right">Assinatura/Carimbo do(a) Secretario(a) Titular da Pasta</h7>
+						  </div>
+                        </div>
+                    </div>
+                <!--<div id="rodape"></div>-->
+</div>
+				<!-- Multiple Radios -->
+				<div class="form-group">
+					<label for="ciente"></label>
+					<div class="col-md-12">
+						<div class="radio">
+							<label for="ciente-0">
+								<p align=left><input type="checkbox" name="ciente" id="ciente-0" value="1" onclick="$('#botaoImprimir').show();">
+								<p align=justify>*Estou ciente que, em razão de sua relação laboral com a PREFEITURA DE PORTO VELHO, lida com dados e informações internos, restritos e/ou confidenciais; de propriedade da Instituição. Estes dados e informações devem ser tratados com absoluta reserva, sob qualquer hipótese e em qualquer circunstância e em caso de dúvida acerca do sigilo de um dado ou informação, o SERVIDOR não deve divulgá-lo a terceiros, exceto se for expressa e previamente autorizado e assinado digitalmente pelo Sistema e-PMPV da PREFEITURA DE PORTO VELHO.</p>
+								<!--*Você está ciente do Termo de Aceite e Sigilo sobre o Uso da Plataforma BI (Campo Obrigatório para ativação do botão Imprimir)-->
+							</label>
+							<p align=center><button id="botaoImprimir" type="button" class="btn btn-primary" style="display: none;" onclick="window.print()">Imprimir</button></p>
+						</div>
+					</div>
+				</fieldset>
+			<p style="text-align: center;" align="justify"><span style="font-size: 10pt;">Rua Dom Pedro II, n.&ordm; 826, Bairro Centro<strong>.</strong>&nbsp;CEP 76.801-066<strong>.</strong>&nbsp;Porto Velho &ndash; RO</span><br><span style="font-size: 10pt;">Telefone: (69) 3901-3079&nbsp;<strong>.</strong>&nbsp;E-mail:&nbsp;<a href="mailto:protocolo.smti@portovelho.ro.gov.br">protocolo.smti@portovelho.ro.gov.br</a>&nbsp;&nbsp;<a href="https://smti.portovelho.ro.gov.br/">https://smti.portovelho.ro.gov.br/</a></span></p>	
+		</form>
+	</div>
+
+	<style type="text/css">
+		fieldset {
+			display: block;
+			margin-inline-start: 3px;
+			margin-inline-end: 3px;
+			padding-block-start: 0.25em;
+			padding-inline-start: 0.65em;
+			padding-inline-end: 0.65em;
+			padding-block-end: 0.625em;
+			min-inline-size: min-content;
+			border-width: 3px;
+			border-style: groove;
+			border-color: threedface;
+			border-image: initial;
+			margin-bottom: 3px;
+		}
+
+		legend {
+			display: block;
+			padding-inline-start: 3px;
+			padding-inline-end: 3px;
+			border-width: initial;
+			border-style: none;
+			border-color: initial;
+			border-image: initial;
+			width: unset;
+		}
+#geral {
+    width:960px;
+    margin:0 auto;
+    background:#ddd;
+}
+#cabecalho {
+   padding:5px;
+   background:#fdd;
+}
+# conteudo-1 {
+    float:left;
+    width:460px;
+    padding:5px;
+    background:#bfb;
+}
+#conteudo-2 {
+    float:center;
+    width:1000px;
+}
+#conteudo-2-1 {
+    float:left;
+    width:300px;
+    padding:5px;
+    background:#ddf;
+}
+#conteudo-2-2 {
+    float:right;
+    /*diminuimos a largura para não quebrar o layout
+    * valor antigo 220
+    */
+    width:220px;
+    padding:5px;
+    background:#dff;
+}
+#rodape {
+   clear:both;
+    padding:10px;
+    background:#ff9;
+}
+<!--	// detecta todas as teclas que estão sendo pressionadas
+     $(document).unbind('keydown').bind('keydown', function (event) {
+    
+    // filtra apenas a tecla <backspace>
+    if (event.keyCode === 8) {
+        
+        // variável que decidirá se a tecla será bloqueada
+        var doPrevent = true;
+        
+        // tipos de campos permitidos
+        var types = ["text", "password", "file", "search", "email", "number", "date", "color", "datetime", "datetime-local", "month", "range", "search", "tel", "time", "url", "week"];
+        
+        var d = $(event.srcElement || event.target);
+        var disabled = d.prop("readonly") || d.prop("disabled");
+        
+        // checa se está nos campos permitidos e libera o <backspace> para edição
+        if (!disabled) {
+            if (d[0].isContentEditable) {
+                doPrevent = false;
+            } else if (d.is("input")) {
+                var type = d.attr("type");
+                if (type) {
+                    type = type.toLowerCase();
+                }
+                if (types.indexOf(type) > -1) {
+                    doPrevent = false;
+                }
+            } else if (d.is("textarea")) {
+                doPrevent = false;
+            }
+        }
+        
+        // bloqueia a tecla
+        if (doPrevent) {
+            event.preventDefault();
+            return false;
+        }
+    }
+});-->
+	</style>
+
+<body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+
+<!--	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+	<script type=text/javascript src=/static/js/app.baa4ea0ba82f3c07ee8e.js></script>
+	<script type="text/javascript">
+		$("#primeiroNomeServidor, #ultimoNomeServidor, #cargoFuncao, #primeiroNomeChefia, #ultimoNomeChefia,#pasta ").keyup(function() {
+			$(this).css('textTransform', 'capitalize');
+		});
+	</script>	
+</body>
+</html>
